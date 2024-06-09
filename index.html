@@ -1,0 +1,176 @@
+
+<html>
+<head>
+  <title>ADV-C152: PLOTTING DIGITAL 1 USING MATRIX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Skranji&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<center>
+<h1 class="titl">ADV-C152: PLOTTING DIGITAL 1 USING MATRIX</h1>
+<br>
+<br>
+<br>
+    <video width="400" controls>
+        <source src="vid.mp4" muted="muted" type="video/mp4">
+    </video>
+    <br>
+    <br>
+    <br>
+    <pre>
+      <code>
+          #ADV-C152: PLOTTING DIGITAL 1 USING MATRIX
+          import matplotlib.pyplot as plt
+
+          data_1 = [[0, 0, 0, 0, 0],
+                    [0, 0, 1, 0, 0],
+                    [0, 1, 1, 0, 0],
+                    [0, 0, 1, 0, 0],
+                    [0, 0, 1, 0, 0],
+                    [0, 0, 1, 0, 0],
+                    [0, 0, 1, 0, 0],
+                    [0, 1, 1, 1, 0],
+                    [0, 0, 0, 0, 0]]
+
+          plt.imshow(data_1, cmap = 'gray')
+          plt.show()
+
+          data_2 = [[0, 0, 0, 0, 0],
+                    [0, 1, 1, 1, 0],
+                    [0, 1, 0, 1, 0],
+                    [0, 1, 0, 1, 0],
+                    [0, 0, 0, 1, 0],
+                    [0, 1, 1, 1, 0],
+                    [0, 1, 0, 0, 0],
+                    [0, 1, 1, 1, 0],
+                    [0, 0, 0, 0, 0]]
+
+          plt.imshow(data_2, cmap = 'gray')
+          plt.show()
+
+          data_3 = [[0, 0, 0, 0, 0],
+                    [0, 1, 1, 1, 0],
+                    [0, 0, 0, 1, 0],
+                    [0, 0, 0, 1, 0],
+                    [0, 1, 1, 1, 0],
+                    [0, 0, 0, 1, 0],
+                    [0, 0, 0, 1, 0],
+                    [0, 1, 1, 1, 0],
+                    [0, 0, 0, 0, 0]]
+
+          plt.imshow(data_3, cmap = 'gray')
+          plt.show()
+
+          data_4 = [[0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0],
+                    [0, 1, 0, 1, 0],
+                    [0, 1, 0, 1, 0],
+                    [0, 1, 1, 1, 0],
+                    [0, 0, 0, 1, 0],
+                    [0, 0, 0, 1, 0],
+                    [0, 0, 0, 0, 0]]
+
+          plt.imshow(data_4, cmap = 'gray')
+          plt.show()
+
+          data_5 = [[0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0],
+                    [0, 1, 1, 1, 0],
+                    [0, 1, 0, 0, 0],
+                    [0, 1, 0, 0, 0],
+                    [0, 1, 1, 1, 0],
+                    [0, 0, 0, 1, 0],
+                    [0, 1, 1, 1, 0],
+                    [0, 0, 0, 0, 0]]
+
+          plt.imshow(data_5, cmap = 'gray')
+          plt.show()
+
+          data_6 = [[0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0],
+                    [0, 1, 1, 1, 0],
+                    [0, 1, 0, 1, 0],
+                    [0, 1, 0, 0, 0],
+                    [0, 1, 1, 1, 0],
+                    [0, 1, 0, 1, 0],
+                    [0, 1, 1, 1, 0],
+                    [0, 0, 0, 0, 0]]
+
+          plt.imshow(data_6, cmap = 'gray')
+          plt.show()
+
+          data_7 = [[0, 0, 0, 0, 0],
+                    [0, 1, 1, 1, 0],
+                    [0, 1, 0, 1, 0],
+                    [0, 1, 0, 1, 0],
+                    [0, 0, 0, 1, 0],
+                    [0, 0, 1, 1, 0],
+                    [0, 0, 1, 0, 0],
+                    [0, 0, 1, 0, 0],
+                    [0, 0, 0, 0, 0]]
+
+          plt.imshow(data_7, cmap = 'gray')
+          plt.show()
+
+          data_8 = [[0, 0, 0, 0, 0],
+                    [0, 1, 1, 1, 0],
+                    [0, 1, 0, 1, 0],
+                    [0, 1, 0, 1, 0],
+                    [0, 1, 1, 1, 0],
+                    [0, 1, 0, 1, 0],
+                    [0, 1, 0, 1, 0],
+                    [0, 1, 1, 1, 0],
+                    [0, 0, 0, 0, 0]]
+
+          plt.imshow(data_8, cmap = 'gray')
+          plt.show()
+
+          data_9 = [[0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0],
+                    [0, 1, 1, 1, 0],
+                    [0, 1, 0, 1, 0],
+                    [0, 1, 0, 1, 0],
+                    [0, 1, 1, 1, 0],
+                    [0, 0, 0, 1, 0],
+                    [0, 1, 1, 1, 0],
+                    [0, 0, 0, 0, 0]]
+
+          plt.imshow(data_9, cmap = 'gray')
+          plt.show()
+
+          data_0 = [[0, 0, 0, 0, 0],
+                    [0, 1, 1, 1, 0],
+                    [0, 1, 0, 1, 0],
+                    [0, 1, 0, 1, 0],
+                    [0, 1, 0, 1, 0],
+                    [0, 1, 0, 1, 0],
+                    [0, 1, 0, 1, 0],
+                    [0, 1, 1, 1, 0],
+                    [0, 0, 0, 0, 0]]
+
+          plt.imshow(data_0, cmap = 'gray')
+          plt.show()
+      </code>
+    </pre>
+    
+<div class="contn">
+
+</div>
+</center>
+<div class="copyright_footer"> Devloped By : Tejas</div>
+</body>
+<script src="main.js"></script>
+</html>
+
+

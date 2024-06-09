@@ -1,0 +1,14 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+pre code {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  padding: 20px;
+  text-align: left;
+}
+body{
+  background-color: aquamarine;
+}
